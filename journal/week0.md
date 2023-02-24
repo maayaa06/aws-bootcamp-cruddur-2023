@@ -101,18 +101,12 @@ clicked on the “Create alarm” button at the bottom of the screen.
 created second billing alarm for monthly usage at 5$
 
 
-## created a budget
+## created a Budget
 
-i did the following steps in creating budget:
-
-
-aws budgets create-budget \
-    --account-id  \
-    --budget file://aws/budget.json \
-    --notifications-with-subscribers file://aws/notifications-with-subscribers.json
+I did the following steps in creating budget:
     
     
- ## Contents of budget.json:
+ ## 1.Contents of budget.json:
     
     {
     "BudgetLimit": {
@@ -147,7 +141,7 @@ aws budgets create-budget \
 }
 
 
-## Contents of notifications-with-subscribers.json:
+## 2.Contents of notifications-with-subscribers.json:
 
 
 
@@ -167,3 +161,10 @@ aws budgets create-budget \
     }
 ]
 
+
+## 3.create-budget
+
+aws budgets create-budget \
+    --account-id  \
+    --budget file://aws/budget.json \
+    --notifications-with-subscribers file://aws/notifications-with-subscribers.json
