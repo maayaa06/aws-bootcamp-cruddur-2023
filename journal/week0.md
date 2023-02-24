@@ -27,8 +27,6 @@
 
 I Recreated Logical Architectual Diagram in Lucid Charts
 
-I Recreated Conceptual Diagram in Lucid Charts or on a Napkin
-
 maayaa06 (Sharon Sekyere): [Conceptual and Logical Diagram](https://lucid.app/lucidchart/110e6690-4013-4f7c-97f6-492366c3fc82/edit?invitationId=inv_e8818191-7dd1-4afa-b61c-4d075528a485&page=0_0#)
 
 
@@ -100,8 +98,12 @@ Finally, entered the threshold value for my bill.
 Entered the Alarm name
 clicked on the “Create alarm” button at the bottom of the screen.
 
+created second billing alarm for monthly usage at 5$
+
 
 ## created a budget
- created  a  budget using AWS CLI 
+ could not create  a  budget using AWS CLI command reference because kept on getting error prompt.
+ 
+ i did the following steps in creating budget
 
 
