@@ -102,8 +102,68 @@ created second billing alarm for monthly usage at 5$
 
 
 ## created a budget
- could not create  a  budget using AWS CLI command reference because kept on getting error prompt.
- 
- i did the following steps in creating budget
 
+i did the following steps in creating budget:
+
+
+aws budgets create-budget \
+    --account-id  \
+    --budget file://aws/budget.json \
+    --notifications-with-subscribers file://aws/notifications-with-subscribers.json
+    
+    
+ ## Contents of budget.json:
+    
+    {
+    "BudgetLimit": {
+        "Amount": "1",
+        "Unit": "USD"
+    },
+    "BudgetName": "Example Tag Budget",
+    "BudgetType": "COST",
+    "CostFilters": {
+        "TagKeyValue": [
+            "user:Key$value1",
+            "user:Key$value2"
+        ]
+    },
+    "CostTypes": {
+        "IncludeCredit": true,
+        "IncludeDiscount": true,
+        "IncludeOtherSubscription": true,
+        "IncludeRecurring": true,
+        "IncludeRefund": true,
+        "IncludeSubscription": true,
+        "IncludeSupport": true,
+        "IncludeTax": true,
+        "IncludeUpfront": true,
+        "UseBlended": false
+    },
+    "TimePeriod": {
+        "Start": 1477958399,
+        "End": 3706473600
+    },
+    "TimeUnit": "MONTHLY"
+}
+
+
+## Contents of notifications-with-subscribers.json:
+
+
+
+    {
+        "Notification": {
+            "ComparisonOperator": "GREATER_THAN",
+            "NotificationType": "ACTUAL",
+            "Threshold": 80,
+            "ThresholdType": "PERCENTAGE"
+        },
+        "Subscribers": [
+            {
+                "Address": "m16430347@gmail.com",
+                "SubscriptionType": "EMAIL"
+            }
+        ]
+    }
+]
 
