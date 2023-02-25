@@ -20,9 +20,6 @@
 
 
 
-
-## I Generated AWS Credentials|
-
 ## Architecture Diagram
 
 I Recreated Logical Architectual Diagram in Lucid Charts
@@ -30,21 +27,29 @@ I Recreated Logical Architectual Diagram in Lucid Charts
 maayaa06 (Sharon Sekyere): [Conceptual and Logical Diagram](https://lucid.app/lucidchart/110e6690-4013-4f7c-97f6-492366c3fc82/edit?invitationId=inv_e8818191-7dd1-4afa-b61c-4d075528a485&page=0_0#)
 
 
-## I Created an Admin User
+### Create a new User and Generate AWS Credentials
 
-I first created a root account with MFA initialized. 
-On the Console Home page, selected the IAM service.
-In the navigation pane, selected Users and then selected Add users.
-On the Specify user details page, under User details, in User name, entered the name for the new user as maayaap.
+• Created a root account with MFA enabled.
 
-Selected Provide user access to the – AWS Management Console.
-created user credentials and
-selected Download .csv to download the user's sign in credentials as a .csv file to save to a safe location.
+• On the Console Home page, selected the IAM service.
+
+• In the navigation pane, selected Users and then selected Add users.
+
+• On the Specify user details page, under User details, in User name, entered the name for the new user as maayaap.
+
+• Selected Provide user access to the – AWS Management Console.
+
+• created user credentials and
+
+• selected Download .csv to download the user's sign in credentials as a .csv file to save to a safe location.
  
-Created a password for the user and
-granted user admin permissions.
-Configured multi-factor authentication (MFA) for the user.
-Gave users permissions to manage their own security credentials.
+• Created a password for the user and
+
+• granted user admin permissions.
+
+• Configured multi-factor authentication (MFA) for the user.
+
+• Gave users permissions to manage their own security credentials.
 
 Selected Email sign-in instructions. 
 
@@ -58,10 +63,9 @@ Then clicked create user.
 
 
 
-
 ## installed AWS CLI
 
-i did the following steps to install AW CLI.
+I did the following steps to install AW CLI:
 
 I installed AWS CLI via gitpod
 
