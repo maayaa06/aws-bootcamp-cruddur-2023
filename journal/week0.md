@@ -169,6 +169,6 @@ I did the following steps in creating budget:
 ## 3.create-budget
 
 aws budgets create-budget \
-    --account-id  \
-    --budget file://aws/budget.json \
-    --notifications-with-subscribers file://aws/notifications-with-subscribers.json
+    --account-id $ACCOUNT_ID \
+    --budget file://aws/json/budget.json \
+    --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
